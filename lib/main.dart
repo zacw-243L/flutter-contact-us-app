@@ -28,21 +28,28 @@ class MyApp extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 32.0,
-                  color: Colors.black45,
+                  color: Colors.cyan,
                   fontFamily: 'Raleway'),
             ),
             Text('180 Ang Mo Kio Ave 8 Singapore 569830'),
             SizedBox(height: 20.0),
-            Card(
-              child: ListTile(
-                leading: Icon(Icons.phone, color: Colors.blue),
-                title: Text('6550 0400'),
+            Padding(
+              padding: EdgeInsets.fromLTRB(5.0, 0, 5.0, 0),
+              child: Card(
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.blue),
+                  title: Text('6550 0400'),
+                ),
               ),
             ),
-            Card(
-              child: ListTile(
-                leading: Icon(Icons.email, color: Colors.blue),
-                title: Text('askNYP@nyp.edu.sg'),
+            SizedBox(height: 2.5),
+            Padding(
+              padding: EdgeInsets.fromLTRB(5.0, 0, 5.0, 0),
+              child: Card(
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.blue),
+                  title: Text('askNYP@nyp.edu.sg'),
+                ),
               ),
             ),
           ],
